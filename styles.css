@@ -8,10 +8,10 @@ body {
 }
 
 .pop-up {
+    z-index: 1;
     padding: 15px;
     background-color: rgb(106, 71, 102);
     position: absolute;
-    height: 40%;
     width: 30%;
     top: 50%;
     left: 50%;
@@ -48,6 +48,18 @@ body {
     background-color: rgb(32, 165, 165);
 }
 
+.stage-center {
+    border: solid 1px black;
+    user-select: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(95, 48, 52);
+    font-size: 70px;
+}
+
 .stage {
     margin: 0 auto;
     height: 75vh;
@@ -59,8 +71,7 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    /* left: -50px; */
-    left: -10px;
+    left: -50px;
     border-top: 20px solid transparent;
     border-left: 50px solid rgb(255, 166, 0);
     border-bottom: 20px solid transparent;
